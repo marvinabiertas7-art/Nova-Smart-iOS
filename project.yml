@@ -1,1 +1,22 @@
+name: NovaSmart
 
+options:
+  bundleIdPrefix: com.novasmart
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+
+targets:
+  NovaSmart:
+    type: application
+    platform: iOS
+    sources:
+      - NovaSmartApp.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.novasmart.app
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
