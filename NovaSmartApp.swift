@@ -4,7 +4,7 @@ import SwiftUI
 struct NovaSmartApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NovaSmartEditor(script: .constant("print(\"Hello from Nova Smart!\" )"))
         }
     }
 }
